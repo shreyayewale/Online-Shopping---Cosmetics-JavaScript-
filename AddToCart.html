@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="commonstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="images/GlameraLogo.png" height="100px">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+    </ul>
+
+    <button onclick="window.location.href='Login.html'">Sign in</button>
+
+    <a href="AddToCart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-arrow-down"></i>
+        <span id="cart-count">0</span>
+    </a>
+
+</nav>
+
+<main>
+
+<h1 style="color:#ff4d88; text-align:center; margin-top:40px;">
+    Your Cart
+</h1>
+
+<div id="cart-container" class="product-container"></div>
+
+<div class="total-box">
+    <span>Total Bill:</span>
+    <span id="total-bill">₹0</span>
+</div>
+
+<div style="text-align:center;">
+    <button id="buy-now" class="btn-add" style="width:auto; padding:12px 25px;">
+        Buy Now
+    </button>
+</div>
+
+</main>
+
+<script src="AddToCart.js"></script>
+
+</body>
+</html>
